@@ -1,0 +1,28 @@
+{
+  "name": "spur-telegram",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Telegram bot of the user's own as a Switch spur: Anthropic's Telegram channel plugin, as it ships.",
+  "license": "MIT",
+  "repository": "github:zachsents/spur-telegram",
+  "spur": {
+    "name": "telegram",
+    "command": [
+      "sh",
+      "./run.sh"
+    ],
+    "shim": "switchboard",
+    "needs": [
+      "always-on"
+    ],
+    "connections": [
+      {
+        "provider": "telegram",
+        "kind": "key",
+        "label": "Telegram",
+        "scopes": [],
+        "multiple": false
+      }
+    ]
+  }
+}
